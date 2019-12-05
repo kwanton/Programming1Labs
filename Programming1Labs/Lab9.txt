@@ -1,0 +1,37 @@
+This program will be pick a random number and play a game with the user. It will then calculate
+the winnings.
+Inputs: Choice, Play Again
+Outputs: Winnings, Games Won, Games Lost
+
+start
+REPEAT if the player wants to play again
+	output game instructions
+	REPEAT 5 times
+		generate random number answer
+		REPEAT while input choice is not between 1 and 3
+			ask for input choice between 1 and 3
+		ENDREPEAT
+		IF input choice is equal to answer
+			increase winnings by 1
+			increase games won by 1
+			congratulate player
+			inform player of games won and lost
+		ELSE
+			decrease winnings by 2
+			increase games lost by 1
+			inform player of loss and what the correct answer was
+			inform play of games won and lost
+		ENDIF
+	ENDREPEAT
+	IF winnings is greater than 0
+		congratulate player and inform them of their winnings
+		inform player of how many games won and lost
+	IF winnings is less than 0
+		inform player of defeat and how much they owe, better luck next time
+		inform player of how many games won and lost
+	ELSE
+		inform player that they broke even this time
+		inform player of how many games won and lost
+	ENDIF
+ENDREPEAT
+output end program

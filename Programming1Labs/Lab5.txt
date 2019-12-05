@@ -1,0 +1,17 @@
+This program
+Inputs: Cookies
+Outputs: Flour Needed, Sugar Needed, Butter Needed
+Formuals: None
+
+start
+set precision to 1
+ask for amount of cookies
+IF cookies % 48
+	output error message
+ENDIF
+ELSE
+	flour needed = (cookies / 48) * 2.5
+	sugar needed = (cookies / 48) * 1.75
+	butter needed = cookies / 48
+	output flour needed, sugar needed, and butter needed
+ENDIF

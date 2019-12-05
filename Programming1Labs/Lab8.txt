@@ -1,0 +1,23 @@
+This program will calculate the profit and sales using different ad budgets
+Inputs: None
+Outputs: Ad Cost, Sales, Profit
+Formulas: Revenue = Sales * 300, Profit = Revenue - (1000 + Ad Cost),
+Sales = ((row - 1) * 0.2) * Sales + Sales
+
+start
+set precision to 2
+output "ad cost," "sales," and "profit," into columns
+REPEAT while previous profit is less than profit
+	set previous profit equal to profit
+	reset sales to 200 for calculation
+	
+	sales = ((row - 1) * 0.2) * sales + sales
+	revenue = sales * 300
+	profit = revenue - (1000 + ad cost)
+	
+	output ad cost, sales, and profit variables on a new line to their respective columns
+
+	ad cost = ad cost * 2
+	row = row + 1
+ENDREPEAT
+end

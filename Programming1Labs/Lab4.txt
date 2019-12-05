@@ -1,0 +1,14 @@
+This program will take in the two legs of a right triange and calculate and output the hypotenuse.
+Inputs: Leg A, Leg B
+Outputs: Hypotenuse
+Formulas: Hypotenuse = sqrt(Leg A^2 + Leg B^2)
+
+start
+set precision to 2
+Ask for leg a
+input leg a
+ask for leg b
+input leg b
+hypotenuse = sqrt(leg a^2 + leg b^2)
+output hypotenuse
+end

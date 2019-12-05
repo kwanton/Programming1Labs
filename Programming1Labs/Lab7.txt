@@ -1,0 +1,31 @@
+This program will ask what internet package was used and calculate the payment off of hours used
+Inputs: Package Selection, Hours Used
+Outputs: Total Balance
+Formulas: None
+
+start
+display package selections
+ask for package selection
+IF user chooses package a
+	REPEAT while hour count is less than zero or greater than 744
+	ask how many hours were used
+	ENDREPEAT
+	IF hours used is greater than 10
+		output $9.95 + ($3.00 * (hours used - 10)) for total balance
+	ELSE
+		output $9.95 for total balance
+	ENDIF
+ELSE user chooses package b
+	REPEAT while hour count is less than zero or greater than 744
+	ask how many hours were used
+	ENDREPEAT
+	IF hours used is greater than 20
+		output $14.95 + ($2.00 * (hours used - 20)) for total balance
+	ELSE
+		output $14.95 for total balance
+	ENDIF
+ELSE user chooses package c
+	output $19.95 for total balance
+ELSE
+	output input error
+ENDIF

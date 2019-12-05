@@ -1,0 +1,20 @@
+This program will determine if a triange can exist with the given side lengths
+Inputs: Side 1, Side 2, Side 3
+Outputs: None
+Formulas: Side 1 + Side 2, Side 2 + Side 3, Side 1 + Side 3
+
+start
+ask for side 1
+ask for side 2
+ask for side 3
+IF side 1 is greater than 0, and, if side 2 is greater than 0, and, side 3 is greater than 0 
+	IF side 1 + side 2 is less than side 3, or, side 2 + side 3 is less than side 1, 
+   	or, side 1 + side 3 is less than side 2
+		output error message
+	ELSE
+		output "this triange can exist within our laws of reality!"
+	ENDIF
+ELSE
+	output error message
+ENDIF
+stop

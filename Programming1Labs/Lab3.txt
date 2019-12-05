@@ -1,0 +1,10 @@
+This Program will calculate the present value of $500 from 10 years ago.
+Inputs: none
+Outputs: presentValue
+Formulas: presentValue = 500 / pow((1 + 0.06), 10)
+
+start
+set precision to 2
+presentvalue = 500 / pow((1 + 0.06), 10)
+output presentvalue
+end

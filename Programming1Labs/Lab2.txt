@@ -1,0 +1,12 @@
+This program will print the interest payment at the end of one year, as well as the new bank balance
+Inputs: none
+Outputs: Interest, FinalBalance
+Formulas: Interest = 580 * 0.025, FinalBalance = 580 + Interest
+
+start
+set precision to 2
+interest = 580 * 0.025
+output interest
+finalbalance = 580 + interest
+output finalbalance
+end
